@@ -10,6 +10,20 @@
   	<servlet-name>xmlServlet</servlet-name>
   	<url-pattern>/xmlServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>INIT_PAGE</servlet-name>
+  	<jsp-file>/init_page.jsp</jsp-file>
+  	<init-param>
+  		<param-name>defaultUser</param-name>
+  		<param-value>Default user Name</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>INIT_PAGE</servlet-name>
+  	<url-pattern>/init_page.jsp</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
 
