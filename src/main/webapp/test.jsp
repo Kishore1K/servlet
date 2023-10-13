@@ -24,5 +24,15 @@
 	The Value of i = <%=i%> & j = <%=j %> so i+j= <%=k %>
 	The Value of  i+j= <%=add(3,5) %>
 	
+	<%
+		for(i=0; i<5; i++){
+			out.println("<br> i="+i);
+		}
+	%>
+	
+	<% for(i=10; i<15; i++ ){%>
+		<br> Value of i= <%=i %>
+	<% }%>
+	
 </body>
 </html>
