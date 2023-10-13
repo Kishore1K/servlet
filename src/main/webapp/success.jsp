@@ -12,11 +12,18 @@
 	<h1>SuccessFull</h1>
 	
 	<%
-		User user = (User) request.getAttribute("user");
+		User user1 = (User) request.getAttribute("user");
 	%>
-	
+	<jsp:useBean  id="user" class="com.servlet.mvc.dto.User" scope="request"></jsp:useBean>
 	the User is = <%=user.getUserName() %>
 		the Password is = <%=user.getPassword() %>
+		
+		<hr/>
+		the User is = <%=user1.getUserName() %>
+		the Password is = <%=user1.getPassword() %>
+		<hr/>
+		the User is = <jsp:getProperty property="userName" name="user" />
+		the Password is = <jsp:getProperty property="password" name="user"/>
 	
 </body>
 </html>
