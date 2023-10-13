@@ -32,8 +32,13 @@ public class xmlServlet extends HttpServlet {
 		writer.println("<h1>This is From Post method </h1>");
 		String uname = req.getParameter("uname"); 
 		String email = req.getParameter("email");
+		String prof = req.getParameter("prof"); 
+		String[] loc = req.getParameterValues("loc");
 		writer.println("<h1>This is From /XMLServlet 1 </h1>");
-		writer.println("Hello "+uname+" Id is "+email);
+		writer.println("Hello "+uname+" Id is "+email + " profession is "+prof + "\n Loc");
+		for(String lString : loc) {
+			writer.println(lString);
+		}
 		
 		
 	}
